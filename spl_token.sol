@@ -1,5 +1,10 @@
 pragma solidity ^0.8.0;
 
+// This SPL token model defines a simple token that can be minted, burned, and transferred. 
+// The total supply of tokens is 1000. 
+// The mint and burn functions are only accessible to the mint and burn authorities, respectively. 
+// The transfer function can be used by any account to transfer tokens to another account.
+
 import "spl/token/src/token.sol";
 
 contract MyToken is Token {
